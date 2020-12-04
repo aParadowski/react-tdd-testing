@@ -8,6 +8,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/tempPolyfills.js"
+    ]
+  },
   "dependencies": {
     "enzyme-adapter-react-16": "^1.15.5",
     "react": "^16.14.0",
